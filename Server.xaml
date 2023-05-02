@@ -1,0 +1,33 @@
+﻿<Window x:Class="Msg.Server"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Msg"
+        mc:Ignorable="d"
+        Title="Server" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition  Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Пользователи" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" />
+        <ListBox x:Name="pol" Grid.Row="1" Grid.Column="0" Grid.RowSpan="4" FontSize="20"/>
+        <Button x:Name="logi" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3" Content="  Посмотреть логи чата  " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20"/>
+        <ListBox x:Name="sms" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="3" Grid.RowSpan="4"  FontSize="20"/>
+        <TextBox x:Name="vvod_sms" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="20"/>
+        <Button x:Name="ot" Grid.Row="5" Grid.Column="4"  Content="  Отправить  "  Click="ot_Click" FontSize="20"/>
+        <Button x:Name="v" Grid.Row="5" Grid.Column="1"  Content="  Выйти  " FontSize="15" Click="v_Click" />
+    </Grid>
+</Window>
